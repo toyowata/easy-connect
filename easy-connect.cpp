@@ -65,6 +65,10 @@ ISM43362Interface wifi(true);
 ISM43362Interface wifi;
 #endif
 
+#elif MBED_CONF_APP_NETWORK_INTERFACE == WIFI_ESP32
+#include "ESP32Interface.h"
+#define EASY_CONNECT_WIFI_TYPE "ESP32"
+ESP32Interface wifi(MBED_CONF_EASY_CONNECT_WIFI_ESP32_TX, MBED_CONF_EASY_CONNECT_WIFI_ESP32_RX);
 #elif MBED_CONF_APP_NETWORK_INTERFACE == ETHERNET
 #include "EthernetInterface.h"
 EthernetInterface eth;

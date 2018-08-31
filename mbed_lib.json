@@ -13,6 +13,14 @@
             "help": "Enable debug logs for (ESP8266)",
             "value": false
         },
+        "wifi-esp32-tx": {
+            "help": "TX pin for serial connection to external device (ESP32)",
+            "value": "D1"
+        },
+        "wifi-esp32-rx": {
+            "help": "RX pin for serial connection to external device (ESP32)",
+            "value": "D0"
+        },
         "wifi-idw01m1-tx": {
             "help": "TX pin for serial connection to external device (X-NUCLEO-IDW01M1)",
             "value": "PA_9"
